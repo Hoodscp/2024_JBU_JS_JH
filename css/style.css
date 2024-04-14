@@ -74,7 +74,6 @@ header a:hover {
 #showcase {
   min-height: 400px;
   background-image: url(/img/back_snow.jpg);
-  text-align: center;
   color: white;
 }
 
@@ -82,8 +81,22 @@ header a:hover {
   margin-top: 100px;
   margin-bottom: 100px;
   font-size: xx-large;
+  text-align: center;
 }
 
+#showcase h2,
+#showcase h3,
+#showcase li {
+  margin-left: 10px;
+}
+
+#showcase a {
+  color: black;
+}
+
+#showcase .container {
+  margin-bottom: 10px;
+}
 /* getmail */
 #getmail {
   background-color: gray;
