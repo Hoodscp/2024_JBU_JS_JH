@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'DGM';
+  src: url(/Fonts/DungGeunMo.woff);
+}
+
+body {
+  background-color: lightgrey;
+  padding: 0;
+  margin: 0;
+  font-family: 'DGM';
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.container_2 {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: darkgray;
+  color: white;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: 3px solid black;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header li {
+  display: inline;
+  padding: 0 10px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  color: black;
+  margin-top: 10px;
+}
+
+header a:hover {
+  border-bottom: 2px black solid;
+}
+
+/* showcase */
+#showcase {
+  min-height: 400px;
+  background-image: url(/img/back_snow.jpg);
+  text-align: center;
+  color: white;
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: xx-large;
+}
+
+/* getmail */
+#getmail {
+  background-color: gray;
+  padding: 15px;
+  color: white;
+}
+
+#getmail h1 {
+  float: left;
+}
+
+#getmail form {
+  float: right;
+  margin-top: 15px;
+}
+
+#getmail input[type='email'] {
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+}
+
+.button1 {
+  height: 38px;
+  background-color: lightgray;
+}
+
+/* boxes*/
+
+#boxes {
+  margin: 20px;
+}
+
+#boxes .box {
+  background-color: darkgray;
+  text-align: center;
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+#boxes .box img {
+  width: 100px;
+}
+
+/* Footer */
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  background-color: gray;
+  text-align: center;
+}
