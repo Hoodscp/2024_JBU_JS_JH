@@ -100,9 +100,14 @@ header a:hover {
 
 #showcase #mountain {
   color: black;
-  background-image: url(/img/mountain.png);
+  background-image: url(/img/mountain_black.png);
   background-size: cover;
   background-position: center top;
+  transition: background-image 1s ease;
+}
+
+#showcase #mountain:hover {
+  background-image: url(/img/mountain_color.png); /* 호버시 변경할 배경 이미지 설정 */
 }
 
 table {
