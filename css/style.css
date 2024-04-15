@@ -90,7 +90,7 @@ header a:hover {
   margin-left: 10px;
 }
 
-#showcase a {
+#showcase h2 a {
   color: black;
 }
 
@@ -99,11 +99,31 @@ header a:hover {
 }
 
 #showcase #mountain {
+  text-align: center;
   color: black;
   background-image: url(/img/mountain_black.png);
   background-size: cover;
   background-position: center top;
   transition: background-image 1s ease;
+}
+
+#showcase .anime {
+  display: inline-block;
+  animation-name: colors;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colors {
+  0% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
 }
 
 #showcase #mountain:hover {
@@ -173,6 +193,8 @@ th {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  min-height: 10vh;
 }
 
 #boxes .box {
