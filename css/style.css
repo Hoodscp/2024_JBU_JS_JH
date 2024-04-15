@@ -130,11 +130,16 @@ header a:hover {
   margin: 20px;
 }
 
+#boxes .container_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 #boxes .box {
   background-color: darkgray;
   text-align: center;
-  float: left;
-  width: 30%;
+  width: 20%;
   padding: 20px;
 }
 
