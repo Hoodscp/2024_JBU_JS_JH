@@ -102,7 +102,35 @@ header a:hover {
   color: black;
   background-image: url(/img/mountain.png);
   background-size: cover;
+  background-position: center;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: darkgray;
+}
+
+caption {
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+td,
+th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+th {
+  background-color: black;
+}
+
+.link:hover {
+  background-color: lightgray;
+}
+
 /* getmail */
 #getmail {
   background-color: gray;
