@@ -78,8 +78,8 @@ header a:hover {
 }
 
 #showcase h1 {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-bottom: 200px;
   font-size: xx-large;
   text-align: center;
 }
@@ -96,6 +96,12 @@ header a:hover {
 
 #showcase .container {
   margin-bottom: 10px;
+}
+
+#showcase #mountain {
+  color: black;
+  background-image: url(/img/mountain.png);
+  background-size: cover;
 }
 /* getmail */
 #getmail {
@@ -150,9 +156,28 @@ header a:hover {
 /* Footer */
 
 footer {
-  padding: 20px;
-  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  font-size: large;
   color: white;
   background-color: gray;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer a {
+  margin-left: 10px;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
 }
