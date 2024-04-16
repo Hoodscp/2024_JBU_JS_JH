@@ -310,18 +310,11 @@ object {
 
 .about {
   display: flex;
+  justify-content: space-between;
 }
 
 .about img {
   margin: 20px;
   width: 200px;
   height: 200px;
-}
-
-.about .left {
-  flex-direction: column;
-}
-
-.about .right {
-  margin-left: auto;
 }
