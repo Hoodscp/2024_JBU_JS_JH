@@ -85,8 +85,7 @@ header a:hover {
 }
 
 #showcase h2,
-#showcase h3,
-#showcase li {
+#showcase h3 {
   margin-left: 10px;
 }
 
@@ -109,9 +108,6 @@ header a:hover {
 
 #showcase .anime {
   display: inline-block;
-  animation-name: colors;
-  animation-duration: 1.2s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes colors {
@@ -128,6 +124,39 @@ header a:hover {
 
 #showcase #mountain:hover {
   background-image: url(/img/mountain_color.png); /* 호버시 변경할 배경 이미지 설정 */
+  animation-name: colors;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+.con_menu {
+  margin: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 50px);
+  grid-gap: 10px;
+}
+
+.menu li {
+  background-color: lightgray;
+  text-align: center;
+  padding: 17px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.menu li:hover {
+  background-color: darkgray;
 }
 
 table {
@@ -235,4 +264,34 @@ footer a {
 footer img {
   width: 40px;
   height: 40px;
+}
+
+.html_box_1 {
+  margin: 10px;
+  background-color: white;
+  color: black;
+}
+
+.html_box_2 {
+  margin: 20px;
+  background-color: lightgray;
+  color: black;
+}
+
+.html_box_3 {
+  margin: 30px;
+  background-color: darkgray;
+}
+
+.html_box_4 {
+  margin: 30px;
+  background-color: darkgray;
+  border: 10px solid black;
+}
+
+.html_box_5 {
+  margin: 30px;
+  background-color: darkgray;
+  border: 10px solid black;
+  padding: 10px;
 }
