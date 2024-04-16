@@ -137,17 +137,16 @@ header a:hover {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 10px;
 }
 
 .menu li {
   background-color: lightgray;
   text-align: center;
-  padding: 17px;
+  padding: 15px;
+  margin: 10px;
 }
 
 .menu li a {
