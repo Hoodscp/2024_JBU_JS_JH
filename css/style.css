@@ -228,7 +228,6 @@ th {
 }
 
 #boxes .box {
-  background-color: darkgray;
   text-align: center;
   width: 20%;
   padding: 20px;
@@ -267,6 +266,8 @@ footer img {
   height: 40px;
 }
 
+/* html boxes */
+
 .html_box_1 {
   margin: 10px;
   background-color: white;
@@ -297,6 +298,8 @@ footer img {
   padding: 10px;
 }
 
+/* pdf */
+
 object {
   width: 1200px;
   height: 600px;
@@ -308,6 +311,8 @@ object {
   align-items: center;
   margin-bottom: 40px;
 }
+
+/* about img */
 
 .about {
   display: flex;
