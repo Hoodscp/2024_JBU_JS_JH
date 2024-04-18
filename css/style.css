@@ -85,8 +85,13 @@ header a:hover {
 }
 
 #showcase h2,
-#showcase h3 {
+#showcase h3,
+#showcase p {
   margin-left: 10px;
+}
+
+#showcase .imgdiv {
+  text-align: center;
 }
 
 #showcase h2 a {
