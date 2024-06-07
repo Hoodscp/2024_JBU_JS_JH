@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: lightgrey;
+  background-color: lightcyan;
   padding: 0;
   margin: 0;
   font-family: 'DGM';
@@ -14,7 +14,8 @@ body {
   width: 80%;
   margin: auto;
   overflow: hidden;
-  background-color: gray;
+  background-color: lightblue;
+  border-radius: 20px;
 }
 
 .container_2 {
@@ -29,13 +30,16 @@ ul {
 }
 
 header {
-  background-color: darkgray;
+  background-color: lightskyblue;
   color: white;
   padding-top: 30px;
   min-height: 70px;
   border-bottom: 3px solid black;
+  border-radius: 0px 0px 30px 30px;
 }
-
+header .container {
+  padding: 5px;
+}
 header a {
   color: white;
   text-decoration: none;
@@ -73,7 +77,7 @@ header a:hover {
 /* showcase */
 #showcase {
   min-height: 400px;
-  background-image: url(/img/back_snow.jpg);
+  /* background-image: url(/img/back_snow.jpg); */
   color: white;
 }
 
@@ -127,7 +131,7 @@ header a:hover {
   }
 }
 
-#showcase #mountain:hover {
+#showcase #mountain {
   background-image: url(/img/mountain_color.png); /* 호버시 변경할 배경 이미지 설정 */
   animation-name: colors;
   animation-duration: 1.2s;
@@ -148,11 +152,19 @@ header a:hover {
   justify-content: center;
 }
 
+@media (max-width: 600px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
 .menu li {
-  background-color: lightgray;
+  background-color: lightcyan;
   text-align: center;
   padding: 15px;
   margin: 10px;
+  border-radius: 20px;
 }
 
 .menu li a {
@@ -162,13 +174,13 @@ header a:hover {
 }
 
 .menu li:hover {
-  background-color: darkgray;
+  background-color: lightskyblue;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: darkgray;
+  background-color: lightskyblue;
 }
 
 caption {
@@ -180,7 +192,7 @@ td,
 th {
   padding: 10px;
   text-align: center;
-  border: 1px solid gray;
+  border: 1px solid lightblue;
 }
 
 th {
@@ -188,14 +200,15 @@ th {
 }
 
 .link:hover {
-  background-color: lightgray;
+  background-color: lightcyan;
 }
 
 /* getmail */
 #getmail {
-  background-color: gray;
+  background-color: lightblue;
   padding: 15px;
   color: white;
+  border-radius: 20px;
 }
 
 #getmail h1 {
@@ -215,7 +228,7 @@ th {
 
 .button1 {
   height: 38px;
-  background-color: lightgray;
+  background-color: lightcyan;
 }
 
 /* boxes*/
@@ -250,16 +263,24 @@ footer {
   margin-top: 10px;
   font-size: large;
   color: white;
-  background-color: gray;
+  background-color: lightblue;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 20px 20px 0px 0px;
 }
 
 footer div {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+/* Flexbox를 사용하여 이미지들을 가로로 정렬 */
+footer div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer a {
@@ -281,24 +302,24 @@ footer img {
 
 .html_box_2 {
   margin: 20px;
-  background-color: lightgray;
+  background-color: lightcyan;
   color: black;
 }
 
 .html_box_3 {
   margin: 30px;
-  background-color: darkgray;
+  background-color: lightcyan;
 }
 
 .html_box_4 {
   margin: 30px;
-  background-color: darkgray;
+  background-color: lightskyblue;
   border: 10px solid black;
 }
 
 .html_box_5 {
   margin: 30px;
-  background-color: darkgray;
+  background-color: lightskyblue;
   border: 10px solid black;
   padding: 10px;
 }
@@ -328,4 +349,42 @@ object {
   margin: 20px;
   width: 200px;
   height: 200px;
+}
+
+.guitar_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guitar_imgs {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 3px;
+}
+
+img {
+  width: 100%;
+}
+
+.guitar_main-img {
+  border-top: white solid 3px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+#guitar_current {
+  width: 80%;
 }
