@@ -388,3 +388,7 @@ img {
 #guitar_current {
   width: 80%;
 }
+
+.center {
+  text-align: center;
+}

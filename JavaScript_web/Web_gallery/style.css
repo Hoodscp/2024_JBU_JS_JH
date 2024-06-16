@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.container {
+  border: white solid 3px;
+  background: white;
+}
+
+.imgs {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-gap: 3px;
+}
+
+img {
+  width: 100%;
+}
+
+.main-img {
+  border-top: white solid 3px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+#current {
+  width: 800px;
+}
