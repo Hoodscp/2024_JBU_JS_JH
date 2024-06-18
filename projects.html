@@ -35,20 +35,38 @@
       </div>
     </header>
     <!--메인화면-->
-    <section id="showcase">
-      <div class="container">
-        <h2>Reversing Project : UPX Packer</h2>
-        <div class="pdf">
-        <object data="/files/2_이지훈_UPX 압축.pdf" type=""></object>
-        </div>
+    <section id="showcase" class="showcase-container">
+      <div class="container scontainer">
+          <h2>Reversing Project : UPX Packer</h2>
+          <div class="pdf">
+              <object data="/files/2_이지훈_UPX 압축.pdf" type=""></object>
+          </div>
       </div>
-      <div class="container">
-        <h2>Network Project : Arp networking</h2>
-        <div class="pdf">
-        <object data="/files/arp reply.pdf" type=""></object>
-        </div>
+      <div class="container scontainer">
+          <h2>Network Project : Arp networking</h2>
+          <div class="pdf">
+              <object data="/files/arp reply.pdf" type=""></object>
+          </div>
       </div>
-    </section>
+      <div class="container scontainer">
+          <h2>Reversing Project : DLL Injection</h2>
+          <div class="pdf">
+              <object data="/files/2_이지훈_DLL_Injection.pdf" type=""></object>
+          </div>
+      </div>
+      <div class="container scontainer">
+          <h2>Reversing Project : PwnDbg</h2>
+          <div class="pdf">
+              <object data="/files/2_이지훈_PwnDbg와_함께하는_Reversing_Wargame.pdf" type=""></object>
+          </div>
+      </div>
+      <div class="container scontainer">
+          <h2>cryptography Project : cryptography</h2>
+          <div class="pdf">
+              <object data="/files/1_이지훈_암호학.pdf" type=""></object>
+          </div>
+      </div>
+  </section>
 
     <!--하단메뉴-->
     <footer>
@@ -63,5 +81,22 @@
         <a href="teams.html"><img src="/img/jbu.png" alt="" /></a>
       </div>
     </footer>
+    <script>
+      let currentIndex = 0;
+      const containers = document.querySelectorAll('.scontainer');
+      const totalContainers = containers.length;
+
+      function showNextContainer() {
+          currentIndex = (currentIndex + 1) % totalContainers;
+          updateContainerPosition();
+      }
+
+      function updateContainerPosition() {
+          const showcase = document.getElementById('showcase');
+          showcase.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+
+      setInterval(showNextContainer, 5000); 
+  </script>
   </body>
 </html>

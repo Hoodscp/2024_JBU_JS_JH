@@ -392,3 +392,12 @@ img {
 .center {
   text-align: center;
 }
+
+.scontainer {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.showcase-container {
+  display: flex;
+}
