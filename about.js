@@ -98,7 +98,6 @@ document.querySelector('#comment-list').addEventListener('click', (e) => {
 
 // 4. Store class : localStorage에 저장하는 기능
 class Store {
-  // 4.1 localStorage에서 책정보를 읽어옴
   static getComments() {
     let comments
     if (localStorage.getItem('comments') === null) {
@@ -109,14 +108,12 @@ class Store {
     return comments
   }
 
-  // 4.2 localStorage에 새로운 책을 저장함
   static addComment(comment) {
     const comments = Store.getComments()
     comments.push(comment)
     localStorage.setItem('comments', JSON.stringify(comments))
   }
 
-  // 4.3 localStorage에서 책정보를 지움
   static removeComment(cmt) {
     const comments = Store.getComments()
 
